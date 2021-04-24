@@ -49,5 +49,11 @@ def getmonarch(year):
     return chieftain
 
 
+
+@app.route('/test', methods=['GET'])
+def test():
+    return "<h1>Dummy Chieftain Orm</h1>"
+    
+    
 if __name__ == '__main__':
     app.run(debug=True)
